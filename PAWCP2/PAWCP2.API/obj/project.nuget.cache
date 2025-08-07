@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D97QFoCUWFk=",
+  "dgSpecHash": "/b2dP5V0Dis=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+  "projectFilePath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maria\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Maria\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",

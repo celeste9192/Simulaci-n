@@ -1,14 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\",
+  "WorkspaceRootPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|c:\\users\\maria\\desktop\\progra\\pawcp2\\pawcp2.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|solutionrelative:pawcp2.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\desktop\\progra\\pawcp2\\pawcp2.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.core\\data\\foodbankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|solutionrelative:pawcp2.core\\data\\foodbankcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.core\\pawcp2.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|solutionrelative:pawcp2.core\\pawcp2.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\pawcp2.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\pawcp2.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +42,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\UserRole.cs",
+              "RelativeToolTip": "PAWCP2.Models\\Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:38:39.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\User.cs",
+              "RelativeToolTip": "PAWCP2.Models\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:38:33.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\Role.cs",
+              "RelativeToolTip": "PAWCP2.Models\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:38:19.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FoodItem.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\FoodItem.cs",
+              "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\FoodItem.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\FoodItem.cs",
+              "RelativeToolTip": "PAWCP2.Models\\Models\\FoodItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:37:59.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodbankContext.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Data\\FoodbankContext.cs",
+              "RelativeDocumentMoniker": "PAWCP2.Core\\Data\\FoodbankContext.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Data\\FoodbankContext.cs",
+              "RelativeToolTip": "PAWCP2.Core\\Data\\FoodbankContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T01:37:42.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PAWCP2.Models",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+              "RelativeDocumentMoniker": "PAWCP2.Models\\PAWCP2.Models.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+              "RelativeToolTip": "PAWCP2.Models\\PAWCP2.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T01:37:17.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PAWCP2.Core",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+              "RelativeDocumentMoniker": "PAWCP2.Core\\PAWCP2.Core.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+              "RelativeToolTip": "PAWCP2.Core\\PAWCP2.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T01:32:38.043Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -46,24 +161,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.Core\\Class1.cs",
-              "RelativeDocumentMoniker": "PAWCP2.Core\\Class1.cs",
-              "ToolTip": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.Core\\Class1.cs",
-              "RelativeToolTip": "PAWCP2.Core\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:15:47.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.Models\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Class1.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\Class1.cs",
-              "ToolTip": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.Models\\Class1.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Class1.cs",
               "RelativeToolTip": "PAWCP2.Models\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

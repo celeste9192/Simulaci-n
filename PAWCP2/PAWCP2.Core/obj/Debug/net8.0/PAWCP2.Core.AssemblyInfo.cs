@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAWCP2.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b9dad3f4b45564e866efd505e58fdd611f38599")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAWCP2.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAWCP2.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

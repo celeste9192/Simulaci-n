@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {}
+    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {
+    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
         "projectName": "PAWCP2.API",
-        "projectPath": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
         "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Desktop\\Progra\\PAWCP2\\PAWCP2.API\\obj\\",
+        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

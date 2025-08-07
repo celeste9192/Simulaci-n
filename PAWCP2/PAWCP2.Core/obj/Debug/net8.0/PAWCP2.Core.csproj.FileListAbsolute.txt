@@ -1,0 +1,15 @@
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\bin\Debug\net8.0\PAWCP2.Core.deps.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\bin\Debug\net8.0\PAWCP2.Core.runtimeconfig.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\bin\Debug\net8.0\PAWCP2.Core.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\bin\Debug\net8.0\PAWCP2.Core.pdb
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.csproj.AssemblyReference.cache
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.AssemblyInfoInputs.cache
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.AssemblyInfo.cs
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.csproj.CoreCompileInputs.cache
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.sourcelink.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\refint\PAWCP2.Core.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.pdb
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\PAWCP2.Core.genruntimeconfig.cache
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.CORE\obj\Debug\net8.0\ref\PAWCP2.Core.dll
