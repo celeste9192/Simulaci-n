@@ -20,4 +20,4 @@ namespace PAWCP2.Models.ViewModels
         public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
     }
 }
-}
+
