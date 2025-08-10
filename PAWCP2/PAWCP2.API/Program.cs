@@ -5,6 +5,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using PAWCP2.Api.Jwt;
 using PAWCP2.Core.Data;
+using PAWCP2.Core.Manager;
+using PAWCP2.Core.Manager.Interfaces;
 using PAWCP2.Core.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,9 +17,11 @@ builder.Services.AddDbContext<FoodbankContext>(opt =>
 
 // Repos/Managers (ya tenés UserRoleRepository, si querés registrar más, hacelo aquí)
 builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
-
+builder.Services.AddScoped<IFoodItemRepository, FoodItemRepository>();
+builder.Services.AddScoped<IFoodItemManager, FoodItemManager>();
 // JWT
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
 
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt["Key"]!);

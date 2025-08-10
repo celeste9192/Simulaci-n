@@ -49,6 +49,12 @@ namespace PAWCP2.Core.Manager
                 await _foodItemRepository.SaveAsync();
             }
         }
+
+        public async Task<IEnumerable<FoodItem>> GetByUserIdWithRoleFilterAsync(int userId)
+        {
+            return await _foodItemRepository.GetByUserIdWithRoleFilterAsync(userId);
+        }
+
     }
 }
 

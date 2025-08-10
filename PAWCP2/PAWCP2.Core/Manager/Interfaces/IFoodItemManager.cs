@@ -10,6 +10,8 @@ namespace PAWCP2.Core.Manager.Interfaces
         Task AddAsync(FoodItem foodItem);
         Task UpdateAsync(FoodItem foodItem);
         Task DeleteAsync(int id);
+
+        Task<IEnumerable<FoodItem>> GetByUserIdWithRoleFilterAsync(int userId);
     }
 }
 

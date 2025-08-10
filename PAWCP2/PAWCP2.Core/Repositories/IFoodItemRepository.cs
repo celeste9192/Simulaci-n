@@ -6,5 +6,6 @@ namespace PAWCP2.Core.Repositories
     {
         // Método adicional específico
         Task<IEnumerable<FoodItem>> GetByRoleIdAsync(int roleId);
+        Task<IEnumerable<FoodItem>> GetByUserIdWithRoleFilterAsync(int userId);
     }
 }

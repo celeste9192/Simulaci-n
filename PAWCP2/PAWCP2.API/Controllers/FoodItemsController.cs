@@ -1,36 +1,35 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using PAWCP2.Core.Data;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using PAWCP2.Core.Manager.Interfaces;
 
 namespace PAWCP2.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] // cualquier usuario autenticado
+    [Authorize] 
     public class FoodItemsController : ControllerBase
     {
-        private readonly FoodbankContext _ctx;
-        public FoodItemsController(FoodbankContext ctx) => _ctx = ctx;
+        private readonly IFoodItemManager _foodItemManager;
+
+       
+        public FoodItemsController(IFoodItemManager foodItemManager)
+        {
+            _foodItemManager = foodItemManager;
+        }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+            // Obtenemos el UserId desde el token
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-            var roleIds = await _ctx.UserRoles
-                .Where(ur => ur.UserId == userId)
-                .Select(ur => ur.RoleId)
-                .ToListAsync();
-
-            // Items activos, visibles si RoleId es null o está dentro de los roles del usuario
-            var items = await _ctx.FoodItems.AsNoTracking()
-    .Where(f => (f.IsActive ?? false) && (f.RoleId == null || roleIds.Contains(f.RoleId.Value)))
-    .OrderBy(f => f.Name)
-    .ToListAsync();
+            // Usamos el Manager para aplicar el filtro de rol
+            var items = await _foodItemManager.GetByUserIdWithRoleFilterAsync(userId);
 
             return Ok(items);
         }
     }
 }
+
