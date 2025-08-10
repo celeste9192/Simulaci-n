@@ -1,36 +1,57 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@*
+    Views/Shared/_Layout.cshtml
+    - Un solo @RenderBody()
+    - Navbar con botón "Iniciar sesión" que abre el modal _LoginModal
+    - Sin duplicar Bootstrap
+    - Sección Scripts opcional
+*@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PAWCP2.Mvc</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PAWCP2.Mvc.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PAWCP2.Mvc</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <div id="mainNavbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
                         </li>
                     </ul>
+
+                    <div class="d-flex">
+                        <!-- Botón que abre el modal de login -->
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Iniciar sesión
+                        </button>
+                        @* Si prefieres una página en vez de modal, usa este link:
+                        <a class="btn btn-outline-primary ms-2" asp-controller="Account" asp-action="Login">Iniciar sesión</a>
+                        *@
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
+        <!-- Aquí se renderiza el contenido de cada vista -->
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -38,12 +59,28 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - PAWCP2.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; @DateTime.Now.Year - PAWCP2.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- Partial del modal de Login -->
+    @await Html.PartialAsync("_LoginModal")
+
+    <!-- Scripts: Bootstrap bundle (incluye Popper). No hace falta jQuery con Bootstrap 5 -->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @* Abrir el modal automáticamente si el controlador setea TempData["ShowLogin"] = "1" *@
+    @if ((TempData["ShowLogin"] as string) == "1")
+    {
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var el = document.getElementById('loginModal');
+                if (el) new bootstrap.Modal(el).show();
+            });
+        </script>
+    }
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

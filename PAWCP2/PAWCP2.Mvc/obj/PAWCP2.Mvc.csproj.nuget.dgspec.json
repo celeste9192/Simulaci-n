@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {}
+    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
-        "projectName": "PAWCP2.Mvc",
-        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
-        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\obj\\",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+        "projectName": "PAWCP2.Core",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,95 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+        "projectName": "PAWCP2.Models",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +133,80 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
+        "projectName": "PAWCP2.Mvc",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj"
+              },
+              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -68,7 +230,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

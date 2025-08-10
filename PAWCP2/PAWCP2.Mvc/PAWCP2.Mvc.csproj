@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PAWCP2.Core\PAWCP2.Core.csproj" />
+    <ProjectReference Include="..\PAWCP2.Models\PAWCP2.Models.csproj" />
+  </ItemGroup>
+
 </Project>

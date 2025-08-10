@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PAWCP2.API\\PAWCP2.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

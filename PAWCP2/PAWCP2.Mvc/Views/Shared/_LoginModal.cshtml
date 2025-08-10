@@ -1,0 +1,23 @@
+﻿<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="loginForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Iniciar sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Correo electrónico</label>
+                        <input class="form-control" name="email" type="email" required />
+                    </div>
+                    <div id="loginError" class="text-danger small d-none">No se pudo iniciar sesión.</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="~/js/login-modal.js"></script>

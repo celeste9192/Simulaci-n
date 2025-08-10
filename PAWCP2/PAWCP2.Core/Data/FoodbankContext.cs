@@ -7,27 +7,21 @@ namespace PAWCP2.Core.Data;
 
 public partial class FoodbankContext : DbContext
 {
-    public FoodbankContext()
-    {
-    }
+    public FoodbankContext() { }
 
-    public FoodbankContext(DbContextOptions<FoodbankContext> options)
-        : base(options)
-    {
-    }
+    public FoodbankContext(DbContextOptions<FoodbankContext> options) : base(options) { }
 
     public virtual DbSet<FoodItem> FoodItems { get; set; }
-
     public virtual DbSet<Role> Roles { get; set; }
-
     public virtual DbSet<User> Users { get; set; }
-
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-1MSSGI4\\SQLEXPRESS;Database=Foodbank;Trusted_Connection=True;TrustServerCertificate=True;");
+    // El OnModelCreating lo dejás igual
 
+    // Elimina completamente OnConfiguring o dejalo sin la cadena:
+    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
+
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<FoodItem>(entity =>
