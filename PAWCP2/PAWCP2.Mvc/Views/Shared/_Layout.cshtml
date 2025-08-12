@@ -1,10 +1,8 @@
-﻿@*
-    Views/Shared/_Layout.cshtml
-    - Un solo @RenderBody()
-    - Navbar con botón "Iniciar sesión" que abre el modal _LoginModal
-    - Sin duplicar Bootstrap
-    - Sección Scripts opcional
-*@
+﻿@{
+    // Autenticación basada en la cookie del API
+    var token = Context?.Request?.Cookies?["fb_access_token"];
+    var isAuth = !string.IsNullOrEmpty(token);
+}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,12 +13,28 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PAWCP2.Mvc.styles.css" asp-append-version="true" />
+
+    <style>
+        /* Bloquear interacción y ocultar contenido cuando no hay login */
+        .blocked { pointer-events: none; filter: blur(2px); }
+        .hidden-unauth { display: none; }
+        /* opcional: quitar scroll cuando no hay login */
+        body.no-scroll { overflow: hidden; }
+    </style>
 </head>
-<body>
+<body class="@(isAuth ? "" : "no-scroll")">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PAWCP2.Mvc</a>
+                @if (isAuth)
+                {
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PAWCP2.Mvc</a>
+                }
+                else
+                {
+                    <span class="navbar-brand">PAWCP2.Mvc</span>
+                }
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,22 +42,34 @@
 
                 <div id="mainNavbar" class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
-                        </li>
+                        @if (isAuth)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="FoodItems" asp-action="Index">Food</a>
+                            </li>
+                        }
                     </ul>
 
                     <div class="d-flex">
-                        <!-- Botón que abre el modal de login -->
-                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            Iniciar sesión
-                        </button>
-                        @* Si prefieres una página en vez de modal, usa este link:
-                        <a class="btn btn-outline-primary ms-2" asp-controller="Account" asp-action="Login">Iniciar sesión</a>
-                        *@
+                        @if (!isAuth)
+                        {
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Iniciar sesión
+                            </button>
+                        }
+                        else
+                        {
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="ms-2">
+                                <button class="btn btn-outline-secondary" type="submit">Salir (@User.Identity.Name)</button>
+                            </form>
+                        }
                     </div>
                 </div>
             </div>
@@ -51,32 +77,41 @@
     </header>
 
     <div class="container">
-        <!-- Aquí se renderiza el contenido de cada vista -->
-        <main role="main" class="pb-3">
+        <!-- SIEMPRE llamar RenderBody. Cuando no hay login, lo bloqueamos visualmente -->
+        <main role="main" class="pb-3 @(isAuth ? "" : "blocked")">
             @RenderBody()
         </main>
+
+        @* Mensaje opcional cuando no hay sesión *@
+        @if (!isAuth)
+        {
+            <div class="text-center py-4">
+                <h5>Por favor, inicia sesión para continuar.</h5>
+            </div>
+        }
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; @DateTime.Now.Year - PAWCP2.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
+            &copy; @DateTime.Now.Year - PAWCP2.Mvc
         </div>
     </footer>
 
-    <!-- Partial del modal de Login -->
+    @* Partial del modal de Login (el tuyo) *@
     @await Html.PartialAsync("_LoginModal")
 
-    <!-- Scripts: Bootstrap bundle (incluye Popper). No hace falta jQuery con Bootstrap 5 -->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @* Abrir el modal automáticamente si el controlador setea TempData["ShowLogin"] = "1" *@
-    @if ((TempData["ShowLogin"] as string) == "1")
+    @* Abrir el modal automáticamente si no hay sesión *@
+    @if (!isAuth || (TempData["ShowLogin"] as string) == "1")
     {
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var el = document.getElementById('loginModal');
-                if (el) new bootstrap.Modal(el).show();
+                if (el && typeof bootstrap !== 'undefined') {
+                    new bootstrap.Modal(el, { backdrop: 'static', keyboard: false }).show();
+                }
             });
         </script>
     }

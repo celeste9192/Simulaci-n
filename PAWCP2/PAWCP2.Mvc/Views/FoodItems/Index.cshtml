@@ -1,0 +1,118 @@
+﻿@model IEnumerable<PAWCP2.Models.ViewModels.FoodItemViewModel>
+@{
+    ViewData["Title"] = "Food Items";
+    int roleId = ViewBag.RoleId is int rid ? rid : 3; // <-- renombrado (rid)
+    string roleName = roleId == 1 ? "Admin" : roleId == 2 ? "Manager" : "Viewer";
+}
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <h2 class="mb-0">Food Items</h2>
+    <span class="badge @(roleId==1 ? "bg-danger" : roleId==2 ? "bg-warning text-dark" : "bg-secondary")">
+        Rol: @roleName
+    </span>
+</div>
+
+
+
+<div class="table-responsive">
+    <table id="foodTable" class="table table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Marca</th>
+                <th>Precio</th>
+                <th>Unidad</th>
+                <th>Stock</th>
+                <th>Vence</th>
+                <th>Tipo</th>
+                <th>Calorías</th>
+                <th>Proveedor</th>
+                <th>Barcode</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="13" class="text-center text-muted py-4">No hay datos para mostrar.</td>
+                </tr>
+            }
+            else
+            {
+                var i = 0;
+                foreach (var it in Model)
+                {
+                    i++;
+                    <tr>
+                        <td>@i</td>
+                        <td>
+                            <div class="fw-semibold">@it.Name</div>
+                            @if (!string.IsNullOrWhiteSpace(it.Description))
+                            {
+                                <div class="text-muted small">@it.Description</div>
+                            }
+                        </td>
+                        <td>@it.Category</td>
+                        <td>@it.Brand</td>
+                        <td>₡ @it.Price.ToString("N2")</td>
+                        <td>@it.Unit</td>
+                        <td>@(it.QuantityInStock?.ToString("N0") ?? "-")</td>
+                        <td>
+                            @if (it.ExpirationDate.HasValue)
+                            {
+                                var d = it.ExpirationDate.Value;  // DateOnly
+                                                                  <span>@d.ToString("yyyy-MM-dd")</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">—</span>
+                            }
+                        </td>
+                        <td>
+                            @if (it.IsPerishable == true)
+                            {
+                                <span class="badge bg-warning text-dark">Perecedero</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">No perecedero</span>
+                            }
+                        </td>
+                        <td>@(it.CaloriesPerServing?.ToString("N0") ?? "—")</td>
+                        <td>@it.Supplier</td>
+                        <td>@it.Barcode</td>
+                        <td>
+                            @{
+                                var roleValue = it.RoleId ?? 3; // <-- renombrado (roleValue)
+                                var rn = roleValue == 1 ? "Admin" : roleValue == 2 ? "Manager" : "Viewer";
+                                var cls = roleValue == 1 ? "bg-danger" : roleValue == 2 ? "bg-warning text-dark" : "bg-secondary";
+                            }
+                            <span class="badge @cls">@rn</span>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        (function(){
+          const q = document.getElementById('q');
+          const table = document.getElementById('foodTable');
+          if(!q || !table) return;
+
+          q.addEventListener('input', function(){
+            const term = (q.value || '').toLowerCase();
+            for (const tr of table.tBodies[0].rows) {
+              const txt = tr.innerText.toLowerCase();
+              tr.style.display = txt.includes(term) ? '' : 'none';
+            }
+          });
+        })();
+    </script>
+}
