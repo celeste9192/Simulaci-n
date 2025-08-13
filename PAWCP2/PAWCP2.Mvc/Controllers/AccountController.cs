@@ -1,5 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.AspNetCore.Mvc;
 using PAWCP2.Models.DTOs;
+using PAWCP2.Models.Models;
+using PAWCP2.Models.ViewModels;
+using LoginRequest = PAWCP2.Models.DTOs.LoginRequest;
+using RegisterRequest = PAWCP2.Models.DTOs.RegisterRequest;
 
 namespace PAWCP2.Mvc.Controllers
 {
@@ -27,10 +32,27 @@ namespace PAWCP2.Mvc.Controllers
         }
 
         [HttpPost]
-        public IActionResult Logout()
+        public async Task<IActionResult> Register([FromBody] UserViewModel req)
         {
-            Response.Cookies.Delete("fb_access_token");
-            return RedirectToAction("Index", "Home");
+            // Completar datos por defecto
+            req.IsActive = true;
+            req.CreatedAt = DateTime.UtcNow;
+            req.LastLogin = null;
+
+            // NO asignar UserRoles aquí, solo los datos del usuario
+
+            var client = _http.CreateClient("api");
+            var res = await client.PostAsJsonAsync("api/auth/register", req);
+
+            if (!res.IsSuccessStatusCode)
+            {
+                var error = await res.Content.ReadAsStringAsync();
+                return BadRequest(error);
+            }
+
+            return Ok();
         }
+
+
     }
 }

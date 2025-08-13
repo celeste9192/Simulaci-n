@@ -22,3 +22,15 @@ C:\Users\juans\OneDrive\Documentos\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\De
 C:\Users\juans\OneDrive\Documentos\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\refint\PAWCP2.Models.dll
 C:\Users\juans\OneDrive\Documentos\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.pdb
 C:\Users\juans\OneDrive\Documentos\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\ref\PAWCP2.Models.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\bin\Debug\net8.0\PAWCP2.Models.deps.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\bin\Debug\net8.0\PAWCP2.Models.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\bin\Debug\net8.0\PAWCP2.Models.pdb
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.AssemblyInfoInputs.cache
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.AssemblyInfo.cs
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.csproj.CoreCompileInputs.cache
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.sourcelink.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\refint\PAWCP2.Models.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.pdb
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\ref\PAWCP2.Models.dll

@@ -26,6 +26,22 @@
     ]
   },
   {
+    "ContainingType": "PAWCP2.Api.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "PAWCP2.Models.ViewModels.UserViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PAWCP2.Api.Controllers.FoodItemsController",
     "Method": "Get",
     "RelativePath": "api/FoodItems",

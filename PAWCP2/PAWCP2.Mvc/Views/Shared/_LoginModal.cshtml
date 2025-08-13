@@ -4,7 +4,6 @@
             <form id="loginForm">
                 <div class="modal-header">
                     <h5 class="modal-title">Iniciar sesión</h5>
-                    
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
@@ -13,11 +12,49 @@
                     </div>
                     <div id="loginError" class="text-danger small d-none">No se pudo iniciar sesión.</div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer d-flex justify-content-between">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">
+                        ¿No tienes cuenta? Regístrate
+                    </a>
                     <button class="btn btn-primary" type="submit">Entrar</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<!-- Modal de registro -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="registerForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registro de usuario</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre de usuario</label>
+                        <input class="form-control" name="username" type="text" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Correo electrónico</label>
+                        <input class="form-control" name="email" type="email" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre completo (opcional)</label>
+                        <input class="form-control" name="fullname" type="text" />
+                    </div>
+                    <div id="registerError" class="text-danger small d-none">Error al registrar usuario.</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-success" type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <script src="~/js/login-modal.js"></script>
+<script src="~/js/register-modal.js"></script>

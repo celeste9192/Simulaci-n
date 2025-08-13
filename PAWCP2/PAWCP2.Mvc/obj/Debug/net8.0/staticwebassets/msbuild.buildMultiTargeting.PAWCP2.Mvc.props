@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PAWCP2.Mvc.props" />
+</Project>
