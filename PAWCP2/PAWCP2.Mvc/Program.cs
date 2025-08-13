@@ -1,7 +1,18 @@
 using System.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Agregar MVC
 builder.Services.AddControllersWithViews();
+
+// Agregar soporte para sesión
+builder.Services.AddDistributedMemoryCache(); // almacenamiento en memoria para sesión
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // tiempo de expiración
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 builder.Services.AddHttpContextAccessor();
 
@@ -14,10 +25,21 @@ builder.Services.AddHttpClient("api", client =>
 
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment()) { app.UseExceptionHandler("/Home/Error"); app.UseHsts(); }
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+// **Activar sesión antes de autorización**
+app.UseSession();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
@@ -38,3 +60,4 @@ public class AuthCookieHandler : DelegatingHandler
         return base.SendAsync(request, ct);
     }
 }
+

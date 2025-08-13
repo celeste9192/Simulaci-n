@@ -1,0 +1,70 @@
+﻿@model PAWCP2.Models.ViewModels.UserRolesViewModel
+
+<h2>Gestión de Usuarios</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Email</th>
+            <th>Rol</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            var currentRole = Model.Map.FirstOrDefault(m => m.UserId == user.Id);
+            var isLoggedUser = user.Id == Model.LoggedUserId;
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @if (isLoggedUser)
+                    {
+                        @Model.Roles.FirstOrDefault(r => r.Id == currentRole?.RoleId)?.Name
+                    }
+                    else
+                    {
+                        <select class="form-select role-select" data-user="@user.Id">
+                            @foreach (var role in Model.Roles)
+                            {
+                                <option value="@role.Id" selected="@(currentRole?.RoleId == role.Id)">
+                                    @role.Name
+                                </option>
+                            }
+                        </select>
+                    }
+                </td>
+                <td>
+                    @if (!isLoggedUser)
+                    {
+                        <button class="btn btn-primary btn-save-role" data-user="@user.Id">Guardar</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll(".btn-save-role").forEach(btn => {
+            btn.addEventListener("click", async function () {
+                const userId = this.dataset.user;
+                const roleId = document.querySelector(`.role-select[data-user="${userId}"]`).value;
+
+                const res = await fetch(`/UserRoles/Set?userId=${userId}&roleId=${roleId}&assigned=true`, {
+                    method: "POST"
+                });
+
+                if (res.ok) {
+                    alert("Rol actualizado");
+                } else {
+                    alert("Error al actualizar rol");
+                }
+            });
+        });
+    </script>
+}
+
