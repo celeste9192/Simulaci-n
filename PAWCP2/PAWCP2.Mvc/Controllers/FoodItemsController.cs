@@ -27,7 +27,7 @@ namespace PAWCP2.Mvc.Controllers
             int? CaloriesMax,
             DateTime? ExpirationDate,
             bool? IsPerishable,
-            bool? IsActive)
+            string? IsActive) // "true", "false" o ""
         {
             var client = _http.CreateClient("api");
 
@@ -43,9 +43,17 @@ namespace PAWCP2.Mvc.Controllers
             if (CaloriesMax.HasValue) items = items.Where(x => x.CaloriesPerServing <= CaloriesMax.Value).ToList();
             if (ExpirationDate.HasValue)
                 items = items.Where(x => x.ExpirationDate.HasValue && x.ExpirationDate.Value.ToDateTime(TimeOnly.MinValue) >= ExpirationDate.Value).ToList();
-
             if (IsPerishable.HasValue) items = items.Where(x => x.IsPerishable == IsPerishable.Value).ToList();
-            if (IsActive.HasValue) items = items.Where(x => x.IsActive == IsActive.Value).ToList();
+
+            // Filtrar activos/inactivos según IsActive
+            if (!string.IsNullOrWhiteSpace(IsActive))
+            {
+                if (IsActive.ToLower() == "true")
+                    items = items.Where(x => x.IsActive == true).ToList();
+                else if (IsActive.ToLower() == "false")
+                    items = items.Where(x => x.IsActive == false).ToList();
+                // Si IsActive es "", no se filtra y trae todos
+            }
 
             int roleId = GetRoleIdFromTokenCookie(Request.Cookies["fb_access_token"]) ?? 3;
 
@@ -66,7 +74,7 @@ namespace PAWCP2.Mvc.Controllers
                 Barcode = x.Barcode,
                 Supplier = x.Supplier,
                 DateAdded = x.DateAdded,
-                IsActive = x.IsActive,
+                IsActive = x.IsActive ?? false,
                 RoleId = x.RoleId,
                 Role = x.Role
             }).ToList();
@@ -82,6 +90,7 @@ namespace PAWCP2.Mvc.Controllers
             return View(vm);
         }
 
+        // ⚡ Método para obtener el RoleId desde el token JWT en cookies
         private static int? GetRoleIdFromTokenCookie(string? token)
         {
             if (string.IsNullOrWhiteSpace(token)) return null;
@@ -117,6 +126,41 @@ namespace PAWCP2.Mvc.Controllers
                 return null;
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateQuantity(int id, int quantity)
+        {
+            var client = _http.CreateClient("api");
+            var res = await client.PutAsJsonAsync($"api/fooditems/{id}/quantity", quantity);
+
+            if (!res.IsSuccessStatusCode)
+                TempData["Error"] = "No se pudo actualizar la cantidad.";
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Deactivate(int id)
+        {
+            var client = _http.CreateClient("api");
+            var res = await client.PutAsync($"api/fooditems/{id}/deactivate", null);
+
+            if (!res.IsSuccessStatusCode)
+                TempData["Error"] = "No se pudo desactivar el producto.";
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Activate(int id)
+        {
+            var client = _http.CreateClient("api");
+            var res = await client.PutAsync($"api/fooditems/{id}/activate", null);
+
+            if (!res.IsSuccessStatusCode)
+                TempData["Error"] = "No se pudo activar el producto.";
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
-

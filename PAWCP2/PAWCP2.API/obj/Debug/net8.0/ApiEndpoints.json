@@ -53,6 +53,59 @@
   },
   {
     "ContainingType": "PAWCP2.Api.Controllers.FoodItemsController",
+    "Method": "ActivateFoodItem",
+    "RelativePath": "api/FoodItems/{id}/activate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PAWCP2.Api.Controllers.FoodItemsController",
+    "Method": "DeactivateFoodItem",
+    "RelativePath": "api/FoodItems/{id}/deactivate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PAWCP2.Api.Controllers.FoodItemsController",
+    "Method": "UpdateQuantity",
+    "RelativePath": "api/FoodItems/{id}/quantity",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "quantity",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PAWCP2.Api.Controllers.FoodItemsController",
     "Method": "GetFilters",
     "RelativePath": "api/FoodItems/filters",
     "HttpMethod": "GET",

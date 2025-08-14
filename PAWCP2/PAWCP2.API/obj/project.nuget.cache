@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ln2GZ17kwHY=",
+  "dgSpecHash": "7mWRXekQ6PI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+  "projectFilePath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maria\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Maria\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
       "projectName": "PAWCP2.Models",
-      "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+      "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
       "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\obj\\",
+      "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

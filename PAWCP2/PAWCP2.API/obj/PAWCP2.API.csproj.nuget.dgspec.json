@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {}
+    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {
+    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
         "projectName": "PAWCP2.API",
-        "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
         "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.API\\obj\\",
+        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
-                "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj"
+              "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
+                "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj"
               },
-              "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
-                "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
+              "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+                "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
+    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
         "projectName": "PAWCP2.Core",
-        "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
         "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Core\\obj\\",
+        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,8 +117,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
-                "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
+              "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+                "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
               }
             }
           }
@@ -176,14 +176,14 @@
         }
       }
     },
-    "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
         "projectName": "PAWCP2.Models",
-        "projectPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
         "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Downloads\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\\PAWCP2\\PAWCP2.Models\\obj\\",
+        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
