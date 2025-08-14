@@ -683,7 +683,7 @@
         },
         "runtime": {
           "PAWCP2.Core.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -691,7 +691,7 @@
       "PAWCP2.Models/1.0.0": {
         "runtime": {
           "PAWCP2.Models.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

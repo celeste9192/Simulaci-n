@@ -38,13 +38,28 @@ namespace PAWCP2.Api.Controllers
                 .Select(ur => ur.Role.RoleName)
                 .ToListAsync();
 
-            var token = _jwt.Create(user, roles, out var expires);
-            // (Opcional) Actualizar LastLogin
-            var tracked = await _ctx.Users.FindAsync(user.UserId);
-            if (tracked != null) { tracked.LastLogin = DateTime.UtcNow; await _ctx.SaveChangesAsync(); }
+            var roleId = await _ctx.UserRoles
+                .Where(ur => ur.UserId == user.UserId)
+                .Select(ur => ur.RoleId)
+                .FirstOrDefaultAsync();
 
-            return new TokenResponse(token, expires);
+            var token = _jwt.Create(user, roles, out var expires);
+
+            var tracked = await _ctx.Users.FindAsync(user.UserId);
+            if (tracked != null)
+            {
+                tracked.LastLogin = DateTime.UtcNow;
+                await _ctx.SaveChangesAsync();
+            }
+
+            return Ok(new
+            {
+                access_token = token,
+                expires_at = expires,
+                role_id = roleId
+            });
         }
+
 
         [HttpPost("register")]
         [AllowAnonymous]

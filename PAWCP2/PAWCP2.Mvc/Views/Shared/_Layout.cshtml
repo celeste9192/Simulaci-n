@@ -2,6 +2,9 @@
     // Autenticación basada en la cookie del API
     var token = Context?.Request?.Cookies?["fb_access_token"];
     var isAuth = !string.IsNullOrEmpty(token);
+
+    // Leer RoleId de la sesión, 0 si no hay
+    var roleId = Context?.Session?.GetInt32("RoleId") ?? 0;
 }
 <!DOCTYPE html>
 <html lang="es">
@@ -15,11 +18,18 @@
     <link rel="stylesheet" href="~/PAWCP2.Mvc.styles.css" asp-append-version="true" />
 
     <style>
-        /* Bloquear interacción y ocultar contenido cuando no hay login */
-        .blocked { pointer-events: none; filter: blur(2px); }
-        .hidden-unauth { display: none; }
-        /* opcional: quitar scroll cuando no hay login */
-        body.no-scroll { overflow: hidden; }
+        .blocked {
+            pointer-events: none;
+            filter: blur(2px);
+        }
+
+        .hidden-unauth {
+            display: none;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="@(isAuth ? "" : "no-scroll")">
@@ -47,9 +57,14 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
-                            </li>
+
+                            @* Solo admins (RoleId == 1) ven el enlace de Usuarios *@
+                            @if (roleId == 1)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="UserRoles" asp-action="Index">Usuarios</a>
+                                </li>
+                            }
 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="FoodItems" asp-action="Index">Food</a>
@@ -74,7 +89,7 @@
                         else
                         {
                             <form asp-controller="Account" asp-action="Logout" method="post" class="ms-2">
-                                <button class="btn btn-outline-secondary" type="submit">Salir (@User.Identity.Name)</button>
+                                <button class="btn btn-outline-secondary" type="submit">Salir</button>
                             </form>
                         }
                     </div>
@@ -84,12 +99,10 @@
     </header>
 
     <div class="container">
-        <!-- SIEMPRE llamar RenderBody. Cuando no hay login, lo bloqueamos visualmente -->
         <main role="main" class="pb-3 @(isAuth ? "" : "blocked")">
             @RenderBody()
         </main>
 
-        @* Mensaje opcional cuando no hay sesión *@
         @if (!isAuth)
         {
             <div class="text-center py-4">
@@ -104,13 +117,11 @@
         </div>
     </footer>
 
-    @* Partial del modal de Login (el tuyo) *@
     @await Html.PartialAsync("_LoginModal")
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @* Abrir el modal automáticamente si no hay sesión *@
     @if (!isAuth || (TempData["ShowLogin"] as string) == "1")
     {
         <script>
@@ -126,3 +137,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

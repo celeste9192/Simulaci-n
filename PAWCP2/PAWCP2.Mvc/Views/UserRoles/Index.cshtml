@@ -1,23 +1,34 @@
+<<<<<<< HEAD
 ﻿
 
 @model PAWCP2.Models.ViewModels.UserRolesCompositeViewModel
 
 
 <h2>Administrar Roles de Usuarios</h2>
+=======
+﻿@model PAWCP2.Models.ViewModels.UserRolesViewModel
+
+<h2>Gestión de Usuarios</h2>
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
 
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Usuario</th>
             <th>Email</th>
+<<<<<<< HEAD
             <th>Nombre completo</th>
             <th>Rol asignado</th>
+=======
+            <th>Rol</th>
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
             <th>Acción</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var user in Model.Users)
         {
+<<<<<<< HEAD
             var assignedRole = Model.UserRoles.FirstOrDefault(ur => ur.UserId == user.UserId);
             int assignedRoleId = assignedRole?.RoleId ?? 0;
 
@@ -45,6 +56,35 @@
                 </td>
                 <td>
                     <button class="btn btn-sm btn-primary save-role-btn" data-userid="@user.UserId">Guardar</button>
+=======
+            var currentRole = Model.Map.FirstOrDefault(m => m.UserId == user.Id);
+            var isLoggedUser = user.Id == Model.LoggedUserId;
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @if (isLoggedUser)
+                    {
+                        @Model.Roles.FirstOrDefault(r => r.Id == currentRole?.RoleId)?.Name
+                    }
+                    else
+                    {
+                        <select class="form-select role-select" data-user="@user.Id">
+                            @foreach (var role in Model.Roles)
+                            {
+                                <option value="@role.Id" selected="@(currentRole?.RoleId == role.Id)">
+                                    @role.Name
+                                </option>
+                            }
+                        </select>
+                    }
+                </td>
+                <td>
+                    @if (!isLoggedUser)
+                    {
+                        <button class="btn btn-primary btn-save-role" data-user="@user.Id">Guardar</button>
+                    }
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
                 </td>
             </tr>
         }
@@ -53,6 +93,7 @@
 
 @section Scripts {
     <script>
+<<<<<<< HEAD
         // Parseamos el JSON que pasamos desde el controlador
         var userRoles = @Html.Raw(ViewData["UserRolesJson"]);
 
@@ -98,8 +139,28 @@
                     location.reload();
                 } catch (error) {
                     alert(error.message);
+=======
+        document.querySelectorAll(".btn-save-role").forEach(btn => {
+            btn.addEventListener("click", async function () {
+                const userId = this.dataset.user;
+                const roleId = document.querySelector(`.role-select[data-user="${userId}"]`).value;
+
+                const res = await fetch(`/UserRoles/Set?userId=${userId}&roleId=${roleId}&assigned=true`, {
+                    method: "POST"
+                });
+
+                if (res.ok) {
+                    alert("Rol actualizado");
+                } else {
+                    alert("Error al actualizar rol");
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
                 }
             });
         });
     </script>
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085

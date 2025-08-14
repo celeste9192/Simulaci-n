@@ -1,9 +1,10 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {}
+    "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {}
   },
   "projects": {
+<<<<<<< HEAD
     "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -90,19 +91,22 @@
       }
     },
     "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
+=======
+    "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+        "projectUniqueName": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
         "projectName": "PAWCP2.Core",
-        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
-        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\obj\\",
+        "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
+        "packagesPath": "C:\\Users\\juans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juans\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -117,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
-                "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
+              "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+                "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
               }
             }
           }
@@ -133,7 +137,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -172,24 +176,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+    "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+        "projectUniqueName": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
         "projectName": "PAWCP2.Models",
-        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
-        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\obj\\",
+        "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
+        "packagesPath": "C:\\Users\\juans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juans\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -216,7 +220,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -237,24 +241,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {
+    "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
         "projectName": "PAWCP2.Mvc",
-        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
-        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\obj\\",
+        "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\PAWCP2.Mvc.csproj",
+        "packagesPath": "C:\\Users\\juans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juans\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -269,14 +273,19 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj": {
                 "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj"
               },
               "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
                 "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj"
+=======
+              "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj": {
+                "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj"
+>>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
               },
-              "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
-                "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
+              "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj": {
+                "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj"
               }
             }
           }
@@ -291,7 +300,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -321,7 +330,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

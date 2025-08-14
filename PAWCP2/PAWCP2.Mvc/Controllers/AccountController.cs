@@ -12,7 +12,7 @@ namespace PAWCP2.Mvc.Controllers
     {
         private readonly IHttpClientFactory _http;
         public AccountController(IHttpClientFactory http) => _http = http;
-
+        [HttpPost]
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] LoginRequest req)
         {
@@ -20,14 +20,20 @@ namespace PAWCP2.Mvc.Controllers
             var res = await client.PostAsJsonAsync("api/auth/login", req);
             if (!res.IsSuccessStatusCode) return Unauthorized();
 
-            var token = await res.Content.ReadFromJsonAsync<TokenResponse>();
-            Response.Cookies.Append("fb_access_token", token!.access_token, new CookieOptions
+            var loginData = await res.Content.ReadFromJsonAsync<LoginResponseWithRole>();
+
+            // Guardar token como cookie
+            Response.Cookies.Append("fb_access_token", loginData!.access_token, new CookieOptions
             {
                 HttpOnly = true,
                 Secure = true,
                 SameSite = SameSiteMode.Lax,
-                Expires = token.expires_at
+                Expires = loginData.expires_at
             });
+
+            // Guardar rol en sesión
+            HttpContext.Session.SetInt32("RoleId", loginData.role_id);
+
             return Ok();
         }
         [HttpPost]
@@ -37,6 +43,15 @@ namespace PAWCP2.Mvc.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+
+
+
+        public class LoginResponseWithRole
+        {
+            public string access_token { get; set; }
+            public DateTime expires_at { get; set; }
+            public int role_id { get; set; }
+        }
 
 
         [HttpPost]
@@ -59,6 +74,13 @@ namespace PAWCP2.Mvc.Controllers
             }
 
             return Ok();
+        }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("fb_access_token");
+            return RedirectToAction("Index", "Home");
         }
 
 
