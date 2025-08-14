@@ -34,3 +34,14 @@ C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0
 C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\refint\PAWCP2.Models.dll
 C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.pdb
 C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\ref\PAWCP2.Models.dll
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\bin\Debug\net8.0\PAWCP2.Models.deps.json
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\bin\Debug\net8.0\PAWCP2.Models.dll
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\bin\Debug\net8.0\PAWCP2.Models.pdb
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.AssemblyInfoInputs.cache
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.AssemblyInfo.cs
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.csproj.CoreCompileInputs.cache
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.dll
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\refint\PAWCP2.Models.dll
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\PAWCP2.Models.pdb
+C:\Users\Maria\Downloads\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\Simulaci-n-c7c388460afefd5cba3188925770c5d6862b2085\PAWCP2\PAWCP2.Models\obj\Debug\net8.0\ref\PAWCP2.Models.dll

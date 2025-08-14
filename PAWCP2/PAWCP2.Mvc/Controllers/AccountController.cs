@@ -36,14 +36,6 @@ namespace PAWCP2.Mvc.Controllers
 
             return Ok();
         }
-        [HttpPost]
-        public IActionResult Logout()
-        {
-            Response.Cookies.Delete("fb_access_token");
-            return RedirectToAction("Index", "Home");
-        }
-
-
 
 
         public class LoginResponseWithRole

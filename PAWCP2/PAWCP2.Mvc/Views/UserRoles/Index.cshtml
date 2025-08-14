@@ -1,62 +1,19 @@
-<<<<<<< HEAD
-﻿
-
-@model PAWCP2.Models.ViewModels.UserRolesCompositeViewModel
-
-
-<h2>Administrar Roles de Usuarios</h2>
-=======
 ﻿@model PAWCP2.Models.ViewModels.UserRolesViewModel
 
 <h2>Gestión de Usuarios</h2>
->>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
 
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Usuario</th>
             <th>Email</th>
-<<<<<<< HEAD
-            <th>Nombre completo</th>
-            <th>Rol asignado</th>
-=======
             <th>Rol</th>
->>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
             <th>Acción</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var user in Model.Users)
         {
-<<<<<<< HEAD
-            var assignedRole = Model.UserRoles.FirstOrDefault(ur => ur.UserId == user.UserId);
-            int assignedRoleId = assignedRole?.RoleId ?? 0;
-
-            <tr>
-                <td>@user.Username</td>
-                <td>@user.Email</td>
-                <td>@user.FullName</td>
-                <td>
-                    <select class="form-select role-select" data-userid="@user.UserId">
-                        <option value="">-- Seleccione rol --</option>
-                        @foreach (var role in Model.Roles)
-                        {
-                            if (role.RoleId == assignedRoleId)
-                            {
-                                @:
-                                <option value="@role.RoleId" selected="selected">@role.RoleName</option>
-                            }
-                            else
-                            {
-                                @:
-                                <option value="@role.RoleId">@role.RoleName</option>
-                            }
-                        }
-                    </select>
-                </td>
-                <td>
-                    <button class="btn btn-sm btn-primary save-role-btn" data-userid="@user.UserId">Guardar</button>
-=======
             var currentRole = Model.Map.FirstOrDefault(m => m.UserId == user.Id);
             var isLoggedUser = user.Id == Model.LoggedUserId;
             <tr>
@@ -84,7 +41,6 @@
                     {
                         <button class="btn btn-primary btn-save-role" data-user="@user.Id">Guardar</button>
                     }
->>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
                 </td>
             </tr>
         }
@@ -93,53 +49,6 @@
 
 @section Scripts {
     <script>
-<<<<<<< HEAD
-        // Parseamos el JSON que pasamos desde el controlador
-        var userRoles = @Html.Raw(ViewData["UserRolesJson"]);
-
-        document.querySelectorAll('.save-role-btn').forEach(btn => {
-            btn.addEventListener('click', async e => {
-                var userId = e.target.getAttribute('data-userid');
-                var select = document.querySelector(`select.role-select[data-userid='${userId}']`);
-                var newRoleId = select.value;
-
-                if (!newRoleId) {
-                    alert("Seleccione un rol válido");
-                    return;
-                }
-
-                try {
-                    // Obtener rol actual
-                    var currentRoleId = userRoles
-                        .filter(ur => ur.UserId === parseInt(userId))
-                        .map(ur => ur.RoleId)[0] || 0;
-
-                    if (parseInt(newRoleId) === currentRoleId) {
-                        alert("El usuario ya tiene ese rol asignado.");
-                        return;
-                    }
-
-                    // Remover rol anterior si existe
-                    if (currentRoleId !== 0) {
-                        let resRemove = await fetch(`@Url.Action("Set")?userId=${userId}&roleId=${currentRoleId}&assigned=false`, {
-                            method: 'POST',
-                            headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() }
-                        });
-                        if (!resRemove.ok) throw new Error('Error al remover rol anterior');
-                    }
-
-                    // Asignar nuevo rol
-                    let resAssign = await fetch(`@Url.Action("Set")?userId=${userId}&roleId=${newRoleId}&assigned=true`, {
-                        method: 'POST',
-                        headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() }
-                    });
-                    if (!resAssign.ok) throw new Error('Error al asignar nuevo rol');
-
-                    alert("Rol actualizado correctamente.");
-                    location.reload();
-                } catch (error) {
-                    alert(error.message);
-=======
         document.querySelectorAll(".btn-save-role").forEach(btn => {
             btn.addEventListener("click", async function () {
                 const userId = this.dataset.user;
@@ -153,14 +62,9 @@
                     alert("Rol actualizado");
                 } else {
                     alert("Error al actualizar rol");
->>>>>>> c7c388460afefd5cba3188925770c5d6862b2085
                 }
             });
         });
     </script>
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> c7c388460afefd5cba3188925770c5d6862b2085

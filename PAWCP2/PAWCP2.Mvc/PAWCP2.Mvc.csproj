@@ -7,13 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PAWCP2.API\PAWCP2.API.csproj" />
     <ProjectReference Include="..\PAWCP2.Core\PAWCP2.Core.csproj" />
     <ProjectReference Include="..\PAWCP2.Models\PAWCP2.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
