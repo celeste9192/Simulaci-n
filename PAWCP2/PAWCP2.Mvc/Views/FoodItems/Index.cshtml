@@ -24,7 +24,7 @@
     </button>
 </div>
 
-<!-- 🪟 Filters Modal -->
+
 <div class="modal fade" id="filtersModal" tabindex="-1" aria-labelledby="filtersModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
         <div class="modal-content">
@@ -35,6 +35,7 @@
 
             <form id="advancedSearchForm" method="get" asp-action="Index">
                 <div class="modal-body row g-3">
+             
                     <div class="col-md-4">
                         <label class="form-label">Category</label>
                         <select class="form-select" name="Category">
@@ -89,21 +90,24 @@
                             <label class="form-check-label" for="isPerishable">Yes</label>
                         </div>
                     </div>
+
+     
                     <div class="col-md-4">
-                        <label class="form-label">Active</label>
+                        <label class="form-label">Status</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="IsActive" value="true" id="active">
-                            <label class="form-check-label" for="active">Activo</label>
+                            <input class="form-check-input" type="radio" name="IsActive" id="all" value="" checked>
+                            <label class="form-check-label" for="all">All</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="IsActive" value="false" id="inactive">
-                            <label class="form-check-label" for="inactive">No activo</label>
+                            <input class="form-check-input" type="radio" name="IsActive" id="active" value="true">
+                            <label class="form-check-label" for="active">Active</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="IsActive" value="" id="all" checked>
-                            <label class="form-check-label" for="all">Todos</label>
+                            <input class="form-check-input" type="radio" name="IsActive" id="inactive" value="false">
+                            <label class="form-check-label" for="inactive">Inactive</label>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="modal-footer">
@@ -152,7 +156,8 @@
                 foreach (var it in Model)
                 {
                     i++;
-                    <tr>
+                    <tr class="@(it.IsActive.GetValueOrDefault() ? "" : "table-secondary text-decoration-line-through")">
+
                         <td>@i</td>
                         <td>
                             <div class="fw-semibold">@it.Name</div>
@@ -181,7 +186,7 @@
                         </td>
                         <td>@(it.ExpirationDate?.ToString("yyyy-MM-dd") ?? "—")</td>
                         <td>
-                            @if (it.IsPerishable.GetValueOrDefault())
+                            @if (it.IsPerishable == true)
                             {
                                 <span class="badge bg-warning text-dark">Perecedero</span>
                             }
@@ -204,6 +209,14 @@
                         @if (roleId == 1 || roleId == 2)
                         {
                             <td>
+                                @if (it.QuantityInStock == 0)
+                                {
+                                    <form asp-action="Deactivate" method="post">
+                                        <input type="hidden" name="id" value="@it.FoodItemId" />
+                                        <button type="submit" class="btn btn-sm btn-danger">❌ Desactivar</button>
+                                    </form>
+                                }
+
                                 @if (!it.IsActive.GetValueOrDefault())
                                 {
                                     <form asp-action="Activate" method="post">
@@ -211,13 +224,7 @@
                                         <button type="submit" class="btn btn-sm btn-success">✅ Activar</button>
                                     </form>
                                 }
-                                else if (it.QuantityInStock == 0)
-                                {
-                                    <form asp-action="Deactivate" method="post">
-                                        <input type="hidden" name="id" value="@it.FoodItemId" />
-                                        <button type="submit" class="btn btn-sm btn-danger">❌ Desactivar</button>
-                                    </form>
-                                }
+
                                 else
                                 {
                                     <span class="text-muted small">—</span>

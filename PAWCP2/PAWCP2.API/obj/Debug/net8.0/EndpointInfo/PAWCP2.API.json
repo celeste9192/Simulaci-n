@@ -89,6 +89,16 @@
         "tags": [
           "FoodItems"
         ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "all"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

@@ -17,7 +17,7 @@ namespace PAWCP2.Mvc.Controllers
 
             if (model == null) model = new UserRolesViewModel();
 
-            // Asignar el usuario logeado (de sesión o token)
+
             model.LoggedUserId = HttpContext.Session.GetInt32("UserId") ?? 0;
 
             return View(model);

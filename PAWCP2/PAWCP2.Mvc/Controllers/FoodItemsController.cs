@@ -1,6 +1,8 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http.Json;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
+
 using PAWCP2.Models.Models;
 using PAWCP2.Models.ViewModels;
 
@@ -31,29 +33,25 @@ namespace PAWCP2.Mvc.Controllers
         {
             var client = _http.CreateClient("api");
 
-            // Traer productos
-            var items = await client.GetFromJsonAsync<List<FoodItem>>("api/fooditems") ?? new();
+            
+            string status = IsActive?.ToLower() switch
+            {
+                "true" => "active",
+                "false" => "inactive",
+                _ => "all"
+            };
 
-            // Filtrar según parámetros
+            
+            var items = await client.GetFromJsonAsync<List<FoodItem>>($"api/fooditems?status={status}") ?? new();
+
+            // Filtrar según otros parámetros
             if (!string.IsNullOrWhiteSpace(Category)) items = items.Where(x => x.Category == Category).ToList();
             if (!string.IsNullOrWhiteSpace(Brand)) items = items.Where(x => x.Brand == Brand).ToList();
             if (!string.IsNullOrWhiteSpace(Supplier)) items = items.Where(x => x.Supplier == Supplier).ToList();
             if (PriceMin.HasValue) items = items.Where(x => x.Price >= PriceMin.Value).ToList();
             if (PriceMax.HasValue) items = items.Where(x => x.Price <= PriceMax.Value).ToList();
             if (CaloriesMax.HasValue) items = items.Where(x => x.CaloriesPerServing <= CaloriesMax.Value).ToList();
-            if (ExpirationDate.HasValue)
-                items = items.Where(x => x.ExpirationDate.HasValue && x.ExpirationDate.Value.ToDateTime(TimeOnly.MinValue) >= ExpirationDate.Value).ToList();
-            if (IsPerishable.HasValue) items = items.Where(x => x.IsPerishable == IsPerishable.Value).ToList();
-
-            // Filtrar activos/inactivos según IsActive
-            if (!string.IsNullOrWhiteSpace(IsActive))
-            {
-                if (IsActive.ToLower() == "true")
-                    items = items.Where(x => x.IsActive == true).ToList();
-                else if (IsActive.ToLower() == "false")
-                    items = items.Where(x => x.IsActive == false).ToList();
-                // Si IsActive es "", no se filtra y trae todos
-            }
+            if (ExpirationDate.HasValue) items = items.Where(x => x.ExpirationDate.HasValue && x.ExpirationDate.Value.ToDateTime(TimeOnly.MinValue) >= ExpirationDate.Value).ToList(); if (IsPerishable.HasValue) items = items.Where(x => x.IsPerishable == IsPerishable.Value).ToList();
 
             int roleId = GetRoleIdFromTokenCookie(Request.Cookies["fb_access_token"]) ?? 3;
 
@@ -79,7 +77,7 @@ namespace PAWCP2.Mvc.Controllers
                 Role = x.Role
             }).ToList();
 
-            // Traer listas de filtros
+      
             var filters = await client.GetFromJsonAsync<FoodItemFiltersDto>("api/fooditems/filters") ?? new FoodItemFiltersDto();
 
             ViewBag.RoleId = roleId;
@@ -90,7 +88,7 @@ namespace PAWCP2.Mvc.Controllers
             return View(vm);
         }
 
-        // ⚡ Método para obtener el RoleId desde el token JWT en cookies
+   
         private static int? GetRoleIdFromTokenCookie(string? token)
         {
             if (string.IsNullOrWhiteSpace(token)) return null;
@@ -164,3 +162,5 @@ namespace PAWCP2.Mvc.Controllers
         }
     }
 }
+
+

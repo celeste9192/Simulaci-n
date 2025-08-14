@@ -34,14 +34,14 @@ namespace PAWCP2.Api.Controllers
                 Email = u.Email
             }).ToList();
 
-            // Mapear roles a DTO
+     
             var rolesDto = roles.Select(r => new RoleDto
             {
                 Id = r.RoleId,
                 Name = r.RoleName
             }).ToList();
 
-            // Mapear UserRoles a DTO
+    
             var mapDto = users
                 .SelectMany(u => u.UserRoles.Select(ur => new UserRoleMapDto
                 {

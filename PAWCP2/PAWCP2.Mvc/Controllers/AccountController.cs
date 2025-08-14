@@ -22,7 +22,6 @@ namespace PAWCP2.Mvc.Controllers
 
             var loginData = await res.Content.ReadFromJsonAsync<LoginResponseWithRole>();
 
-            // Guardar token como cookie
             Response.Cookies.Append("fb_access_token", loginData!.access_token, new CookieOptions
             {
                 HttpOnly = true,
@@ -31,7 +30,7 @@ namespace PAWCP2.Mvc.Controllers
                 Expires = loginData.expires_at
             });
 
-            // Guardar rol en sesión
+       
             HttpContext.Session.SetInt32("RoleId", loginData.role_id);
 
             return Ok();
@@ -49,12 +48,12 @@ namespace PAWCP2.Mvc.Controllers
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] UserViewModel req)
         {
-            // Completar datos por defecto
+      
             req.IsActive = true;
             req.CreatedAt = DateTime.UtcNow;
             req.LastLogin = null;
 
-            // NO asignar UserRoles aquí, solo los datos del usuario
+       
 
             var client = _http.CreateClient("api");
             var res = await client.PostAsJsonAsync("api/auth/register", req);

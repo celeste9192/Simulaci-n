@@ -15,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FoodbankContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
-// Repos/Managers (ya tenés UserRoleRepository, si querés registrar más, hacelo aquí)
+
 builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
 builder.Services.AddScoped<IFoodItemRepository, FoodItemRepository>();
 builder.Services.AddScoped<IFoodItemManager, FoodItemManager>();
@@ -44,7 +44,7 @@ builder.Services.AddAuthentication(opt =>
     };
 });
 
-// CORS para el MVC
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("default", policy =>
@@ -56,7 +56,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers();
 
-// Swagger con auth
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -94,7 +94,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("default");
 
-app.UseAuthentication();   // ? IMPORTANTE: antes de Authorization
+app.UseAuthentication();  
 app.UseAuthorization();
 
 app.MapControllers();

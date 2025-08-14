@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAWCP2.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed8afb409adf0956dfb6b910734483c48ff4d5e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daf3100c0a457cc5055a4cb245f30aae097086f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAWCP2.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAWCP2.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

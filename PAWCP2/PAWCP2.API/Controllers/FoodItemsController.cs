@@ -14,23 +14,28 @@ namespace PAWCP2.Api.Controllers
     {
         private readonly IFoodItemManager _foodItemManager;
 
-
         public FoodItemsController(IFoodItemManager foodItemManager)
         {
             _foodItemManager = foodItemManager;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] string? status = "all")
         {
-            // Obtenemos el UserId desde el token
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-            // Usamos el Manager para aplicar el filtro de rol
             var items = await _foodItemManager.GetByUserIdWithRoleFilterAsync(userId);
+
+            items = status?.ToLower() switch
+            {
+                "active" => items.Where(x => x.IsActive.GetValueOrDefault()).ToList(),
+                "inactive" => items.Where(x => !x.IsActive.GetValueOrDefault()).ToList(),
+                _ => items.ToList() 
+            };
 
             return Ok(items);
         }
+
 
 
         [HttpGet("filters")]
@@ -71,8 +76,7 @@ namespace PAWCP2.Api.Controllers
         public async Task<IActionResult> UpdateQuantity(int id, [FromBody] int quantity)
         {
             var item = await _foodItemManager.GetByIdAsync(id);
-            if (item == null)
-                return NotFound();
+            if (item == null) return NotFound();
 
             item.QuantityInStock = quantity;
             await _foodItemManager.UpdateAsync(item);
@@ -85,11 +89,8 @@ namespace PAWCP2.Api.Controllers
         public async Task<IActionResult> DeactivateFoodItem(int id)
         {
             var item = await _foodItemManager.GetByIdAsync(id);
-            if (item == null)
-                return NotFound();
-
-            if (item.QuantityInStock != 0)
-                return BadRequest("Solo se puede desactivar si la cantidad es 0.");
+            if (item == null) return NotFound();
+            if (item.QuantityInStock != 0) return BadRequest("Solo se puede desactivar si la cantidad es 0.");
 
             item.IsActive = false;
             await _foodItemManager.UpdateAsync(item);
@@ -97,28 +98,19 @@ namespace PAWCP2.Api.Controllers
             return NoContent();
         }
 
-
         [HttpPut("{id}/activate")]
         [Authorize(Roles = "Admin,Manager")]
         public async Task<IActionResult> ActivateFoodItem(int id)
         {
             var item = await _foodItemManager.GetByIdAsync(id);
-            if (item == null)
-                return NotFound();
-
-            if (item.QuantityInStock <= 0)
-                return BadRequest("No se puede activar el producto: la cantidad debe ser mayor que 0.");
+            if (item == null) return NotFound();
+            if (item.QuantityInStock <= 0) return BadRequest("No se puede activar el producto: la cantidad debe ser mayor que 0.");
 
             item.IsActive = true;
             await _foodItemManager.UpdateAsync(item);
 
             return NoContent();
         }
-
-
-
-
-
     }
 
 }

@@ -9,7 +9,7 @@ namespace PAWCP2.Models.ViewModels
         public List<RoleDto> Roles { get; set; } = new List<RoleDto>();
         public List<UserRoleMapDto> Map { get; set; } = new List<UserRoleMapDto>();
 
-        // NUEVA: Id del usuario logeado
+   
         public int LoggedUserId { get; set; }
     }
 

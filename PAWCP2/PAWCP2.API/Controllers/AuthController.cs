@@ -91,7 +91,7 @@ namespace PAWCP2.Api.Controllers
                 {
                     UserId = nuevoUsuario.UserId,
                     RoleId = 3
-                    // NO asignar Role ni User aquí
+                  
                 };
 
                 _ctx.UserRoles.Add(userRole);

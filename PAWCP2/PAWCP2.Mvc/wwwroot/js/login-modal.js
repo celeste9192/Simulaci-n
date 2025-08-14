@@ -1,7 +1,7 @@
 ﻿document.getElementById("loginForm")?.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Ocultar error previo
+  
     const errorEl = document.getElementById("loginError");
     if (errorEl) errorEl.classList.add("d-none");
 
@@ -19,7 +19,7 @@
         });
 
         if (res.ok) {
-            // login correcto: recargar página para reflejar sesión y rol
+        
             location.reload();
         } else {
             if (errorEl) errorEl.classList.remove("d-none");
