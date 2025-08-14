@@ -96,47 +96,10 @@
         }
       }
     },
-    "/api/UserRoles": {
+    "/api/FoodItems/filters": {
       "get": {
         "tags": [
-          "UserRoles"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/UserRoles/set": {
-      "post": {
-        "tags": [
-          "UserRoles"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "roleId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "assigned",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          }
+          "FoodItems"
         ],
         "responses": {
           "200": {

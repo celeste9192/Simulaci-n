@@ -3,76 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\userroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\userroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\wwwroot\\js\\register-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\wwwroot\\js\\register-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\wwwroot\\js\\login-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\wwwroot\\js\\login-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\views\\shared\\_loginmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\views\\shared\\_loginmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\views\\fooditems\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\views\\fooditems\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\fooditemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\fooditemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\controllers\\fooditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,6 +21,78 @@
     {
       "AbsoluteMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.core\\manager\\fooditemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|solutionrelative:pawcp2.core\\manager\\fooditemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\fooditemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\fooditemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\pawcp2.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\pawcp2.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\views\\userroles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\views\\userroles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\views\\shared\\_loginmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\views\\shared\\_loginmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\userrolescompositeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\userrolescompositeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\viewmodels\\userroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\viewmodels\\userroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\wwwroot\\js\\register-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\wwwroot\\js\\register-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\wwwroot\\js\\login-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\wwwroot\\js\\login-modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{150143A7-1E05-481F-AAF0-EFC1094938ED}|PAWCP2.Core\\PAWCP2.Core.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.core\\repositories\\fooditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{06F8995C-BDB3-4ABD-880A-E8DC21039E3F}|PAWCP2.Mvc\\PAWCP2.Mvc.csproj|solutionrelative:pawcp2.mvc\\wwwroot\\js\\login-modal.js||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.api\\pawcp2.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6DFB130B-4FAD-457D-800B-33F10BB4CA7F}|PAWCP2.API\\PAWCP2.API.csproj|solutionrelative:pawcp2.api\\pawcp2.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|c:\\users\\maria\\documents\\github\\simulaci-n\\pawcp2\\pawcp2.models\\pawcp2.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{ABE30475-C23B-46DD-BB99-43CFDA491330}|PAWCP2.Models\\PAWCP2.Models.csproj|solutionrelative:pawcp2.models\\pawcp2.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -186,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -214,7 +222,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
+              "Title": "UserRolesCompositeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserRolesCompositeViewModel.cs",
+              "RelativeDocumentMoniker": "PAWCP2.Models\\ViewModels\\UserRolesCompositeViewModel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserRolesCompositeViewModel.cs",
+              "RelativeToolTip": "PAWCP2.Models\\ViewModels\\UserRolesCompositeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T02:39:07.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\UserRoles\\Index.cshtml",
+              "RelativeDocumentMoniker": "PAWCP2.Mvc\\Views\\UserRoles\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\UserRoles\\Index.cshtml",
+              "RelativeToolTip": "PAWCP2.Mvc\\Views\\UserRoles\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T02:34:38.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "register-modal.js",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\wwwroot\\js\\register-modal.js",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\wwwroot\\js\\register-modal.js",
@@ -222,12 +254,11 @@
               "RelativeToolTip": "PAWCP2.Mvc\\wwwroot\\js\\register-modal.js",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-13T00:39:33.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T00:39:33.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\DTOs\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\DTOs\\RegisterRequest.cs",
@@ -235,24 +266,24 @@
               "RelativeToolTip": "PAWCP2.Models\\DTOs\\RegisterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:38:52.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T00:38:52.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "FoodItemsController.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\FoodItemsController.cs",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\Controllers\\FoodItemsController.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\FoodItemsController.cs",
               "RelativeToolTip": "PAWCP2.Mvc\\Controllers\\FoodItemsController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAUwGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAD4vy0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T02:02:11.068Z"
+              "WhenOpened": "2025-08-10T02:02:11.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "IFoodItemManager.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Manager\\Interfaces\\IFoodItemManager.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Manager\\Interfaces\\IFoodItemManager.cs",
@@ -264,58 +295,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
               "Title": "FoodItemManager.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Manager\\FoodItemManager.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Manager\\FoodItemManager.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Manager\\FoodItemManager.cs",
               "RelativeToolTip": "PAWCP2.Core\\Manager\\FoodItemManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwDcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T04:45:08.753Z"
+              "WhenOpened": "2025-08-10T04:45:08.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "_LoginModal.cshtml",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\Shared\\_LoginModal.cshtml",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\Views\\Shared\\_LoginModal.cshtml",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\Shared\\_LoginModal.cshtml",
               "RelativeToolTip": "PAWCP2.Mvc\\Views\\Shared\\_LoginModal.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDYAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T02:03:47.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T02:03:47.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\ViewModels\\UserViewModel.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserViewModel.cs",
               "RelativeToolTip": "PAWCP2.Models\\ViewModels\\UserViewModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:57:31.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T01:57:31.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\AccountController.cs*",
-              "RelativeToolTip": "PAWCP2.Mvc\\Controllers\\AccountController.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAUwDYAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PAWCP2.Mvc\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T02:01:27.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "login-modal.js",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\wwwroot\\js\\login-modal.js",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\wwwroot\\js\\login-modal.js",
@@ -323,60 +353,61 @@
               "RelativeToolTip": "PAWCP2.Mvc\\wwwroot\\js\\login-modal.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-10T02:18:02.986Z",
+              "WhenOpened": "2025-08-10T02:18:02.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml",
+              "RelativeDocumentMoniker": "PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml*",
+              "RelativeToolTip": "PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml*",
+              "ViewState": "AgIAALMAAAAAAAAAAADwv8oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T00:36:43.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml",
-              "RelativeToolTip": "PAWCP2.Mvc\\Views\\FoodItems\\Index.cshtml",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAGoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-12T00:36:43.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "UserRolesController.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\UserRolesController.cs",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\Controllers\\UserRolesController.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Controllers\\UserRolesController.cs",
               "RelativeToolTip": "PAWCP2.Mvc\\Controllers\\UserRolesController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T02:02:35.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "PAWCP2.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAqwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-10T02:03:12.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "FoodItemViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\FoodItemViewModel.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\ViewModels\\FoodItemViewModel.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\FoodItemViewModel.cs",
               "RelativeToolTip": "PAWCP2.Models\\ViewModels\\FoodItemViewModel.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAADwvykAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:57:04.913Z"
+              "WhenOpened": "2025-08-07T01:57:04.913Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\Program.cs",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\Program.cs",
@@ -388,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Program.cs",
               "RelativeDocumentMoniker": "PAWCP2.API\\Program.cs",
@@ -400,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "IFoodItemRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Repositories\\IFoodItemRepository.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Repositories\\IFoodItemRepository.cs",
@@ -412,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "UserRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Repositories\\UserRoleRepository.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Repositories\\UserRoleRepository.cs",
@@ -424,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "FoodItemRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Repositories\\FoodItemRepository.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Repositories\\FoodItemRepository.cs",
@@ -436,19 +467,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "FoodItemsController.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\FoodItemsController.cs",
               "RelativeDocumentMoniker": "PAWCP2.API\\Controllers\\FoodItemsController.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\FoodItemsController.cs",
               "RelativeToolTip": "PAWCP2.API\\Controllers\\FoodItemsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAWwEQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T01:58:55.14Z"
+              "WhenOpened": "2025-08-10T01:58:55.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "UserRoleManager.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Manager\\UserRoleManager.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Manager\\UserRoleManager.cs",
@@ -460,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Jwt\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "PAWCP2.API\\Jwt\\IJwtTokenService.cs",
@@ -472,33 +504,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "UserRolesController.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\UserRolesController.cs",
               "RelativeDocumentMoniker": "PAWCP2.API\\Controllers\\UserRolesController.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\UserRolesController.cs",
               "RelativeToolTip": "PAWCP2.API\\Controllers\\UserRolesController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAywGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T01:59:39.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T01:59:39.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "PAWCP2.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "PAWCP2.API\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAuwFQAAAA/AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PAWCP2.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T01:58:21.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "FoodbankContext.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Data\\FoodbankContext.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Data\\FoodbankContext.cs",
@@ -510,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "FoodItem.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\FoodItem.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\FoodItem.cs",
@@ -522,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "JwtTokenService.cs.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\Jwt\\JwtTokenService.cs.cs",
               "RelativeDocumentMoniker": "PAWCP2.API\\Jwt\\JwtTokenService.cs.cs",
@@ -534,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "TokenResponse..cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\DTOs\\TokenResponse..cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\DTOs\\TokenResponse..cs",
@@ -546,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\DTOs\\LoginRequest.cs",
@@ -554,12 +585,11 @@
               "RelativeToolTip": "PAWCP2.Models\\DTOs\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T01:52:41.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T01:52:41.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\appsettings.json",
               "RelativeDocumentMoniker": "PAWCP2.API\\appsettings.json",
@@ -567,12 +597,11 @@
               "RelativeToolTip": "PAWCP2.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-10T01:48:46.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T01:48:46.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "login-modal.js",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\wwwroot\\js\\login-modal.js",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\wwwroot\\js\\login-modal.js",
@@ -584,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Mvc\\appsettings.json",
               "RelativeDocumentMoniker": "PAWCP2.Mvc\\appsettings.json",
@@ -596,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 7,
               "Title": "PAWCP2.API.csproj",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
               "RelativeDocumentMoniker": "PAWCP2.API\\PAWCP2.API.csproj",
@@ -604,11 +633,12 @@
               "RelativeToolTip": "PAWCP2.API\\PAWCP2.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-10T01:55:50.722Z"
+              "WhenOpened": "2025-08-10T01:55:50.722Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "IUserRoleManager.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Manager\\Interfaces\\IUserRoleManager.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Manager\\Interfaces\\IUserRoleManager.cs",
@@ -620,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "PAWCP2.Models.csproj",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\PAWCP2.Models.csproj",
               "RelativeDocumentMoniker": "PAWCP2.Models\\PAWCP2.Models.csproj",
@@ -632,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\User.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\User.cs",
@@ -644,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\UserRole.cs",
@@ -656,33 +686,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "RoleViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\RoleViewModel.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\ViewModels\\RoleViewModel.cs",
               "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\RoleViewModel.cs",
               "RelativeToolTip": "PAWCP2.Models\\ViewModels\\RoleViewModel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:57:12.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T01:57:12.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "UserRoleViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserRoleViewModel.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\ViewModels\\UserRoleViewModel.cs",
-              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserRoleViewModel.cs*",
-              "RelativeToolTip": "PAWCP2.Models\\ViewModels\\UserRoleViewModel.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\ViewModels\\UserRoleViewModel.cs",
+              "RelativeToolTip": "PAWCP2.Models\\ViewModels\\UserRoleViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:57:21.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T01:57:21.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Models\\Role.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\Models\\Role.cs",
@@ -694,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "IUserRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Repositories\\IUserRoleRepository.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Repositories\\IUserRoleRepository.cs",
@@ -706,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Repositories\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Repositories\\IRepositoryBase.cs",
@@ -718,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "PAWCP2.Core\\Repositories\\RepositoryBase.cs",
@@ -730,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "PAWCP2.Core.csproj",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Core\\PAWCP2.Core.csproj",
               "RelativeDocumentMoniker": "PAWCP2.Core\\PAWCP2.Core.csproj",
@@ -742,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.Models\\Class1.cs",
               "RelativeDocumentMoniker": "PAWCP2.Models\\Class1.cs",

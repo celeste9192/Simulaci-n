@@ -1,0 +1,105 @@
+﻿
+
+@model PAWCP2.Models.ViewModels.UserRolesCompositeViewModel
+
+
+<h2>Administrar Roles de Usuarios</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Email</th>
+            <th>Nombre completo</th>
+            <th>Rol asignado</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            var assignedRole = Model.UserRoles.FirstOrDefault(ur => ur.UserId == user.UserId);
+            int assignedRoleId = assignedRole?.RoleId ?? 0;
+
+            <tr>
+                <td>@user.Username</td>
+                <td>@user.Email</td>
+                <td>@user.FullName</td>
+                <td>
+                    <select class="form-select role-select" data-userid="@user.UserId">
+                        <option value="">-- Seleccione rol --</option>
+                        @foreach (var role in Model.Roles)
+                        {
+                            if (role.RoleId == assignedRoleId)
+                            {
+                                @:
+                                <option value="@role.RoleId" selected="selected">@role.RoleName</option>
+                            }
+                            else
+                            {
+                                @:
+                                <option value="@role.RoleId">@role.RoleName</option>
+                            }
+                        }
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-primary save-role-btn" data-userid="@user.UserId">Guardar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        // Parseamos el JSON que pasamos desde el controlador
+        var userRoles = @Html.Raw(ViewData["UserRolesJson"]);
+
+        document.querySelectorAll('.save-role-btn').forEach(btn => {
+            btn.addEventListener('click', async e => {
+                var userId = e.target.getAttribute('data-userid');
+                var select = document.querySelector(`select.role-select[data-userid='${userId}']`);
+                var newRoleId = select.value;
+
+                if (!newRoleId) {
+                    alert("Seleccione un rol válido");
+                    return;
+                }
+
+                try {
+                    // Obtener rol actual
+                    var currentRoleId = userRoles
+                        .filter(ur => ur.UserId === parseInt(userId))
+                        .map(ur => ur.RoleId)[0] || 0;
+
+                    if (parseInt(newRoleId) === currentRoleId) {
+                        alert("El usuario ya tiene ese rol asignado.");
+                        return;
+                    }
+
+                    // Remover rol anterior si existe
+                    if (currentRoleId !== 0) {
+                        let resRemove = await fetch(`@Url.Action("Set")?userId=${userId}&roleId=${currentRoleId}&assigned=false`, {
+                            method: 'POST',
+                            headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() }
+                        });
+                        if (!resRemove.ok) throw new Error('Error al remover rol anterior');
+                    }
+
+                    // Asignar nuevo rol
+                    let resAssign = await fetch(`@Url.Action("Set")?userId=${userId}&roleId=${newRoleId}&assigned=true`, {
+                        method: 'POST',
+                        headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() }
+                    });
+                    if (!resAssign.ok) throw new Error('Error al asignar nuevo rol');
+
+                    alert("Rol actualizado correctamente.");
+                    location.reload();
+                } catch (error) {
+                    alert(error.message);
+                }
+            });
+        });
+    </script>
+}

@@ -281,3 +281,16 @@ C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\obj\Debug\net8.0\re
 C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\obj\Debug\net8.0\PAWCP2.Mvc.pdb
 C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\obj\Debug\net8.0\PAWCP2.Mvc.genruntimeconfig.cache
 C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\obj\Debug\net8.0\ref\PAWCP2.Mvc.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\obj\Debug\net8.0\PAWCP2.Mvc.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\PAWCP2.API.deps.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\PAWCP2.API.runtimeconfig.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\PAWCP2.API.staticwebassets.endpoints.json
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\PAWCP2.API.exe
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\PAWCP2.API.dll
+C:\Users\Maria\Documents\GitHub\Simulaci-n\PAWCP2\PAWCP2.Mvc\bin\Debug\net8.0\PAWCP2.API.pdb

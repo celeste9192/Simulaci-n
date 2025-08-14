@@ -11,21 +11,45 @@ namespace PAWCP2.Mvc.Controllers
         private readonly IHttpClientFactory _http;
         public FoodItemsController(IHttpClientFactory http) => _http = http;
 
-        public async Task<IActionResult> Index()
+        public class FoodItemFiltersDto
+        {
+            public List<string> Categories { get; set; } = new();
+            public List<string> Brands { get; set; } = new();
+            public List<string> Suppliers { get; set; } = new();
+        }
+
+        public async Task<IActionResult> Index(
+            string? Category,
+            string? Brand,
+            string? Supplier,
+            decimal? PriceMin,
+            decimal? PriceMax,
+            int? CaloriesMax,
+            DateTime? ExpirationDate,
+            bool? IsPerishable,
+            bool? IsActive)
         {
             var client = _http.CreateClient("api");
 
-            // Traer todos los items desde el API
+            // Traer productos
             var items = await client.GetFromJsonAsync<List<FoodItem>>("api/fooditems") ?? new();
 
-            // Determinar rol del usuario (1=Admin, 2=Manager, 3=Viewer)
+            // Filtrar según parámetros
+            if (!string.IsNullOrWhiteSpace(Category)) items = items.Where(x => x.Category == Category).ToList();
+            if (!string.IsNullOrWhiteSpace(Brand)) items = items.Where(x => x.Brand == Brand).ToList();
+            if (!string.IsNullOrWhiteSpace(Supplier)) items = items.Where(x => x.Supplier == Supplier).ToList();
+            if (PriceMin.HasValue) items = items.Where(x => x.Price >= PriceMin.Value).ToList();
+            if (PriceMax.HasValue) items = items.Where(x => x.Price <= PriceMax.Value).ToList();
+            if (CaloriesMax.HasValue) items = items.Where(x => x.CaloriesPerServing <= CaloriesMax.Value).ToList();
+            if (ExpirationDate.HasValue)
+                items = items.Where(x => x.ExpirationDate.HasValue && x.ExpirationDate.Value.ToDateTime(TimeOnly.MinValue) >= ExpirationDate.Value).ToList();
+
+            if (IsPerishable.HasValue) items = items.Where(x => x.IsPerishable == IsPerishable.Value).ToList();
+            if (IsActive.HasValue) items = items.Where(x => x.IsActive == IsActive.Value).ToList();
+
             int roleId = GetRoleIdFromTokenCookie(Request.Cookies["fb_access_token"]) ?? 3;
 
-            // Filtrar según rol
-            var filtered = FilterByRole(items, roleId);
-
-            // Mapear a ViewModel (ExpirationDate ya es DateOnly? en tu modelo => asignación directa)
-            var vm = filtered.Select(x => new FoodItemViewModel
+            var vm = items.Select(x => new FoodItemViewModel
             {
                 FoodItemId = x.FoodItemId,
                 Name = x.Name,
@@ -35,7 +59,7 @@ namespace PAWCP2.Mvc.Controllers
                 Price = x.Price,
                 Unit = x.Unit,
                 QuantityInStock = x.QuantityInStock,
-                ExpirationDate = x.ExpirationDate, // <-- SIN conversión
+                ExpirationDate = x.ExpirationDate,
                 IsPerishable = x.IsPerishable,
                 CaloriesPerServing = x.CaloriesPerServing,
                 Ingredients = x.Ingredients,
@@ -47,18 +71,15 @@ namespace PAWCP2.Mvc.Controllers
                 Role = x.Role
             }).ToList();
 
-            ViewBag.RoleId = roleId;
-            return View(vm);
-        }
+            // Traer listas de filtros
+            var filters = await client.GetFromJsonAsync<FoodItemFiltersDto>("api/fooditems/filters") ?? new FoodItemFiltersDto();
 
-        private static IEnumerable<FoodItem> FilterByRole(IEnumerable<FoodItem> items, int roleId)
-        {
-            return roleId switch
-            {
-                1 => items, // Admin: todo
-                2 => items.Where(i => i.RoleId == 2 || i.RoleId == 3), // Manager: manager + viewer
-                _ => items.Where(i => i.RoleId == 3) // Viewer: solo viewer
-            };
+            ViewBag.RoleId = roleId;
+            ViewBag.Categories = filters.Categories;
+            ViewBag.Brands = filters.Brands;
+            ViewBag.Suppliers = filters.Suppliers;
+
+            return View(vm);
         }
 
         private static int? GetRoleIdFromTokenCookie(string? token)
@@ -70,7 +91,6 @@ namespace PAWCP2.Mvc.Controllers
                 var handler = new JwtSecurityTokenHandler();
                 var jwt = handler.ReadJwtToken(token);
 
-                // Busca posibles nombres de claim
                 var roleClaim = jwt.Claims.FirstOrDefault(c =>
                     string.Equals(c.Type, "role_id", StringComparison.OrdinalIgnoreCase) ||
                     string.Equals(c.Type, "role", StringComparison.OrdinalIgnoreCase) ||
@@ -78,7 +98,6 @@ namespace PAWCP2.Mvc.Controllers
 
                 if (roleClaim == null) return null;
 
-                // Convertir a int si es posible, si no mapear por nombre
                 if (!int.TryParse(roleClaim.Value, out var roleId))
                 {
                     var val = roleClaim.Value.Trim().ToLowerInvariant();

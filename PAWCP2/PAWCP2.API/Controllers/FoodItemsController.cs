@@ -30,6 +30,40 @@ namespace PAWCP2.Api.Controllers
 
             return Ok(items);
         }
-    }
-}
+    
 
+    [HttpGet("filters")]
+        public async Task<IActionResult> GetFilters()
+        {
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var items = await _foodItemManager.GetByUserIdWithRoleFilterAsync(userId);
+
+            var filters = new
+            {
+                Categories = items
+                    .Where(x => !string.IsNullOrEmpty(x.Category))
+                    .Select(x => x.Category!)
+                    .Distinct()
+                    .OrderBy(x => x)
+                    .ToList(),
+
+                Brands = items
+                    .Where(x => !string.IsNullOrEmpty(x.Brand))
+                    .Select(x => x.Brand!)
+                    .Distinct()
+                    .OrderBy(x => x)
+                    .ToList(),
+
+                Suppliers = items
+                    .Where(x => !string.IsNullOrEmpty(x.Supplier))
+                    .Select(x => x.Supplier!)
+                    .Distinct()
+                    .OrderBy(x => x)
+                    .ToList()
+            };
+
+            return Ok(filters);
+        }
+    }
+
+}

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using PAWCP2.Models.ViewModels;  // importa el namespace de tus VM
 
 namespace PAWCP2.Mvc.Controllers
 {
@@ -10,7 +12,12 @@ namespace PAWCP2.Mvc.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _http.CreateClient("api");
-            var data = await client.GetFromJsonAsync<dynamic>("api/userroles");
+            // Aquí debes mapear el resultado a tu ViewModel fuerte (no solo dynamic)
+            var data = await client.GetFromJsonAsync<UserRolesCompositeViewModel>("api/userroles");
+
+            // Serializa aquí los UserRoles para JS
+            ViewData["UserRolesJson"] = JsonConvert.SerializeObject(data.UserRoles);
+
             return View(data);
         }
 

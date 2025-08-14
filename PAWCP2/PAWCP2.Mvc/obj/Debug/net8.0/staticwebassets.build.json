@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "et4bFNLO/jgSr5g7OL9K9n6XxajdcFhYXt7s34cPTMM=",
+  "Hash": "VmxQ54ns2GVMsxxArLxH1ciCw72L556Ee+XRXpUs2S0=",
   "Source": "PAWCP2.Mvc",
   "BasePath": "_content/PAWCP2.Mvc",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Maria\\Documents\\GitHub\\Simulaci-n\\PAWCP2\\PAWCP2.API\\PAWCP2.API.csproj",
+      "Version": 2,
+      "Source": "PAWCP2.API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "PAWCP2.Mvc\\wwwroot",

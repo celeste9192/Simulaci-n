@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<PAWCP2.Models.ViewModels.FoodItemViewModel>
 @{
     ViewData["Title"] = "Food Items";
-    int roleId = ViewBag.RoleId is int rid ? rid : 3; // <-- renombrado (rid)
+    int roleId = ViewBag.RoleId is int rid ? rid : 3;
     string roleName = roleId == 1 ? "Admin" : roleId == 2 ? "Manager" : "Viewer";
 }
 
@@ -12,7 +12,101 @@
     </span>
 </div>
 
+<div class="d-flex gap-2 align-items-center mb-3">
+    <div class="flex-grow-1">
+        <div class="input-group">
+            <span class="input-group-text">🔎</span>
+            <input id="q" type="text" class="form-control" placeholder="Search by name, category, brand, supplier, etc.">
+        </div>
+    </div>
+    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#filtersModal">
+        Filters
+    </button>
+</div>
 
+<!-- 🪟 Filters Modal -->
+<div class="modal fade" id="filtersModal" tabindex="-1" aria-labelledby="filtersModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filtersModalLabel">Advanced Filters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form id="advancedSearchForm" method="get" asp-action="Index">
+                <div class="modal-body row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" name="Category">
+                            <option value="">-- Select --</option>
+                            @foreach (var cat in (IEnumerable<string>)ViewBag.Categories ?? Enumerable.Empty<string>())
+                            {
+                                <option value="@cat">@cat</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Brand</label>
+                        <select class="form-select" name="Brand">
+                            <option value="">-- Select --</option>
+                            @foreach (var brand in (IEnumerable<string>)ViewBag.Brands ?? Enumerable.Empty<string>())
+                            {
+                                <option value="@brand">@brand</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Supplier</label>
+                        <select class="form-select" name="Supplier">
+                            <option value="">-- Select --</option>
+                            @foreach (var sup in (IEnumerable<string>)ViewBag.Suppliers ?? Enumerable.Empty<string>())
+                            {
+                                <option value="@sup">@sup</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Min Price</label>
+                        <input type="number" class="form-control" name="PriceMin" placeholder="₡">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Max Price</label>
+                        <input type="number" class="form-control" name="PriceMax" placeholder="₡">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Max Calories</label>
+                        <input type="number" class="form-control" name="CaloriesMax" placeholder="≤ X">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Expiration Date (after)</label>
+                        <input type="date" class="form-control" name="ExpirationDate">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Perishable</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="isPerishable" name="IsPerishable" value="true">
+                            <label class="form-check-label" for="isPerishable">Yes</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Active</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="isActive" name="IsActive" value="true">
+                            <label class="form-check-label" for="isActive">Yes</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="reset" form="advancedSearchForm" class="btn btn-outline-secondary">Clear</button>
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="table-responsive">
     <table id="foodTable" class="table table-hover align-middle">
@@ -60,17 +154,7 @@
                         <td>₡ @it.Price.ToString("N2")</td>
                         <td>@it.Unit</td>
                         <td>@(it.QuantityInStock?.ToString("N0") ?? "-")</td>
-                        <td>
-                            @if (it.ExpirationDate.HasValue)
-                            {
-                                var d = it.ExpirationDate.Value;  // DateOnly
-                                                                  <span>@d.ToString("yyyy-MM-dd")</span>
-                            }
-                            else
-                            {
-                                <span class="text-muted">—</span>
-                            }
-                        </td>
+                        <td>@(it.ExpirationDate?.ToString("yyyy-MM-dd") ?? "—")</td>
                         <td>
                             @if (it.IsPerishable == true)
                             {
@@ -86,7 +170,7 @@
                         <td>@it.Barcode</td>
                         <td>
                             @{
-                                var roleValue = it.RoleId ?? 3; // <-- renombrado (roleValue)
+                                var roleValue = it.RoleId ?? 3;
                                 var rn = roleValue == 1 ? "Admin" : roleValue == 2 ? "Manager" : "Viewer";
                                 var cls = roleValue == 1 ? "bg-danger" : roleValue == 2 ? "bg-warning text-dark" : "bg-secondary";
                             }
@@ -102,17 +186,17 @@
 @section Scripts {
     <script>
         (function(){
-          const q = document.getElementById('q');
-          const table = document.getElementById('foodTable');
-          if(!q || !table) return;
+            const q = document.getElementById('q');
+            const table = document.getElementById('foodTable');
+            if(!q || !table) return;
 
-          q.addEventListener('input', function(){
-            const term = (q.value || '').toLowerCase();
-            for (const tr of table.tBodies[0].rows) {
-              const txt = tr.innerText.toLowerCase();
-              tr.style.display = txt.includes(term) ? '' : 'none';
-            }
-          });
+            q.addEventListener('input', function(){
+                const term = (q.value || '').toLowerCase();
+                for (const tr of table.tBodies[0].rows) {
+                    const txt = tr.innerText.toLowerCase();
+                    tr.style.display = txt.includes(term) ? '' : 'none';
+                }
+            });
         })();
     </script>
 }
